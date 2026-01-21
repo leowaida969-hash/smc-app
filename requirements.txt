@@ -1,22 +1,7 @@
-from google import genai
-
-# 1. SETUP
-# Paste your NEW key here to test it
-api_key = "AIzaSyCl-vZUsHzGUFKvQU8V5q6icct1X9Xy7yg"
-
-client = genai.Client(api_key=api_key)
-
-print("Testing connection...")
-
-try:
-    # 2. LIST MODELS (New Way)
-    print("Available Models:")
-    for m in client.models.list():
-        if "generateContent" in m.supported_actions:
-            print(f" - {m.name}")
-            
-except Exception as e:
-    print(f"\nERROR: {e}")
-    print("\nTroubleshooting:")
-    print("1. If error is 'User location', TURN ON YOUR VPN (USA).")
-    print("2. If error is 'API key', generate a new one.")
+streamlit
+google-genai
+pillow
+yfinance
+pandas
+plotly
+numpy
